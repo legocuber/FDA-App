@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		35CDF4C920D062D700071E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4C820D062D700071E6E /* AppDelegate.swift */; };
 		35CDF4CB20D062D700071E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4CA20D062D700071E6E /* ViewController.swift */; };
-		35CDF4CE20D062D700071E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF4CC20D062D700071E6E /* Main.storyboard */; };
 		35CDF4D020D062D700071E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF4CF20D062D700071E6E /* Assets.xcassets */; };
-		35CDF4D320D062D700071E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF4D120D062D700071E6E /* LaunchScreen.storyboard */; };
 		35CDF4DE20D062D800071E6E /* FDA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4DD20D062D800071E6E /* FDA_AppTests.swift */; };
 		35CDF4E920D062D800071E6E /* FDA_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4E820D062D800071E6E /* FDA_AppUITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +35,7 @@
 		35CDF4C520D062D700071E6E /* FDA-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDA-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CDF4C820D062D700071E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CDF4CA20D062D700071E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35CDF4CD20D062D700071E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35CDF4CF20D062D700071E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35CDF4D220D062D700071E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35CDF4D420D062D700071E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CDF4D920D062D800071E6E /* FDA-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDA-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CDF4DD20D062D800071E6E /* FDA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDA_AppTests.swift; sourceTree = "<group>"; };
@@ -99,9 +95,7 @@
 			children = (
 				35CDF4C820D062D700071E6E /* AppDelegate.swift */,
 				35CDF4CA20D062D700071E6E /* ViewController.swift */,
-				35CDF4CC20D062D700071E6E /* Main.storyboard */,
 				35CDF4CF20D062D700071E6E /* Assets.xcassets */,
-				35CDF4D120D062D700071E6E /* LaunchScreen.storyboard */,
 				35CDF4D420D062D700071E6E /* Info.plist */,
 			);
 			path = "FDA-App";
@@ -232,9 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CDF4D320D062D700071E6E /* LaunchScreen.storyboard in Resources */,
 				35CDF4D020D062D700071E6E /* Assets.xcassets in Resources */,
-				35CDF4CE20D062D700071E6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +286,6 @@
 			targetProxy = 35CDF4E520D062D800071E6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		35CDF4CC20D062D700071E6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35CDF4CD20D062D700071E6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		35CDF4D120D062D700071E6E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35CDF4D220D062D700071E6E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		35CDF4EB20D062D800071E6E /* Debug */ = {
