@@ -10,8 +10,7 @@
 		35CDF4C920D062D700071E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4C820D062D700071E6E /* AppDelegate.swift */; };
 		35CDF4CB20D062D700071E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4CA20D062D700071E6E /* ViewController.swift */; };
 		35CDF4D020D062D700071E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF4CF20D062D700071E6E /* Assets.xcassets */; };
-		35CDF4DE20D062D800071E6E /* FDA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4DD20D062D800071E6E /* FDA_AppTests.swift */; };
-		35CDF4E920D062D800071E6E /* FDA_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4E820D062D800071E6E /* FDA_AppUITests.swift */; };
+		35CDF4F920D065DF00071E6E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4F820D065DF00071E6E /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +37,8 @@
 		35CDF4CF20D062D700071E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35CDF4D420D062D700071E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CDF4D920D062D800071E6E /* FDA-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDA-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35CDF4DD20D062D800071E6E /* FDA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDA_AppTests.swift; sourceTree = "<group>"; };
-		35CDF4DF20D062D800071E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CDF4E420D062D800071E6E /* FDA-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDA-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35CDF4E820D062D800071E6E /* FDA_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDA_AppUITests.swift; sourceTree = "<group>"; };
-		35CDF4EA20D062D800071E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35CDF4F820D065DF00071E6E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				35CDF4C720D062D700071E6E /* FDA-App */,
-				35CDF4DC20D062D800071E6E /* FDA-AppTests */,
-				35CDF4E720D062D800071E6E /* FDA-AppUITests */,
 				35CDF4C620D062D700071E6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,26 +91,9 @@
 				35CDF4CA20D062D700071E6E /* ViewController.swift */,
 				35CDF4CF20D062D700071E6E /* Assets.xcassets */,
 				35CDF4D420D062D700071E6E /* Info.plist */,
+				35CDF4F820D065DF00071E6E /* TestView.swift */,
 			);
 			path = "FDA-App";
-			sourceTree = "<group>";
-		};
-		35CDF4DC20D062D800071E6E /* FDA-AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				35CDF4DD20D062D800071E6E /* FDA_AppTests.swift */,
-				35CDF4DF20D062D800071E6E /* Info.plist */,
-			);
-			path = "FDA-AppTests";
-			sourceTree = "<group>";
-		};
-		35CDF4E720D062D800071E6E /* FDA-AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				35CDF4E820D062D800071E6E /* FDA_AppUITests.swift */,
-				35CDF4EA20D062D800071E6E /* Info.plist */,
-			);
-			path = "FDA-AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CDF4CB20D062D700071E6E /* ViewController.swift in Sources */,
+				35CDF4F920D065DF00071E6E /* TestView.swift in Sources */,
 				35CDF4C920D062D700071E6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CDF4DE20D062D800071E6E /* FDA_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CDF4E920D062D800071E6E /* FDA_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
