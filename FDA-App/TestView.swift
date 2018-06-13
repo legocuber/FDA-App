@@ -39,7 +39,6 @@ class TestView {
         constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0))
         constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0))
         
-        //label.addConstraints(constraints)
         NSLayoutConstraint.activate(constraints)
         
         
