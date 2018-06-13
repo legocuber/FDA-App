@@ -32,6 +32,7 @@
 		35C133A620D1C57600CA584B /* EventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C133A020D1C57600CA584B /* EventLog.swift */; };
 		35C133A720D1C57600CA584B /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C133A120D1C57600CA584B /* Child.swift */; };
 		35C133A820D1C57600CA584B /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C133A220D1C57600CA584B /* EventType.swift */; };
+		35C133AA20D1C85900CA584B /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C133A920D1C85900CA584B /* AddChildViewController.swift */; };
 		35CDF4C920D062D700071E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4C820D062D700071E6E /* AppDelegate.swift */; };
 		35CDF4CB20D062D700071E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4CA20D062D700071E6E /* ViewController.swift */; };
 		35CDF4D020D062D700071E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF4CF20D062D700071E6E /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		35C133A020D1C57600CA584B /* EventLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLog.swift; sourceTree = "<group>"; };
 		35C133A120D1C57600CA584B /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		35C133A220D1C57600CA584B /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		35C133A920D1C85900CA584B /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 		35CDF4C520D062D700071E6E /* FDA-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDA-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CDF4C820D062D700071E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CDF4CA20D062D700071E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				35CDF4D420D062D700071E6E /* Info.plist */,
 				35CDF4F820D065DF00071E6E /* TestView.swift */,
 				0AA094E020D09A3F0085450B /* PrimaryCaregiverViewController.swift */,
+				35C133A920D1C85900CA584B /* AddChildViewController.swift */,
 			);
 			path = "FDA-App";
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				35C133A420D1C57600CA584B /* DateUtil.swift in Sources */,
 				0AA094E120D09A3F0085450B /* PrimaryCaregiverViewController.swift in Sources */,
 				35C133A620D1C57600CA584B /* EventLog.swift in Sources */,
+				35C133AA20D1C85900CA584B /* AddChildViewController.swift in Sources */,
 				35C133A820D1C57600CA584B /* EventType.swift in Sources */,
 				35C133A520D1C57600CA584B /* Event.swift in Sources */,
 				35CDF4C920D062D700071E6E /* AppDelegate.swift in Sources */,
