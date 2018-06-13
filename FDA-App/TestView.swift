@@ -23,19 +23,7 @@ class TestView {
         viewc = PrimaryCaregiverViewController()
 
         delegate.window!.rootViewController = viewc
-<<<<<<< HEAD
 
-=======
-        viewc.view.addSubview(label)
-        
-        var constraints = [NSLayoutConstraint]()
-        
-        constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0))
-        constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0))
-        
-        NSLayoutConstraint.activate(constraints)
-        
->>>>>>> b708e8a7ccfafec7e7197776d28d025242b0ae66
         
     }
     func showView() {
