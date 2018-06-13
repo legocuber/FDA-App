@@ -20,28 +20,10 @@ class TestView {
         delegate = useDelegate;
         
         delegate.window = UIWindow(frame: UIScreen.main.bounds)
-        viewc = UIViewController()
-        viewc.view = UIView();
-        viewc.view.backgroundColor = UIColor.red
-        
-        label = UILabel()
-        
-        label.textAlignment = NSTextAlignment.center
-        label.text = "Food and Drug Administration"
-        label.backgroundColor = UIColor.white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
+        viewc = PrimaryCaregiverViewController()
+
         delegate.window!.rootViewController = viewc
-        viewc.view.addSubview(label)
-        
-        var constraints = [NSLayoutConstraint]()
-        
-        constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0))
-        constraints.append(NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: viewc.view, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0))
-        
-        //label.addConstraints(constraints)
-        NSLayoutConstraint.activate(constraints)
-        
+
         
     }
     func showView() {
