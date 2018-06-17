@@ -27,12 +27,21 @@ class PrimaryCaregiverViewController: UIViewController {
     
     let scrollView: UIScrollView = {
         let screensize = UIScreen.main.bounds
-        let scrollView = UIScrollView()
+        let scrollView = UIScrollView(frame: screensize)
         scrollView.backgroundColor = UIColor(red: 81.0 / 255.0, green: 100.0 / 255.0, blue: 192.0 / 255.0, alpha: 1.0)
         // Divide by 255 to convert from a 0-255 scale to a 0-1 scale
         scrollView.contentSize = CGSize(width: screensize.width - 40, height: 1100)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
+    }()
+    
+    let firstnameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "First name: "
+        label.textColor = UIColor.white
+        label.font = UIFont(name: "Montserrat-Bold", size: 28.0)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     override func viewDidLoad() {
@@ -41,6 +50,8 @@ class PrimaryCaregiverViewController: UIViewController {
         self.view = background
         
         self.view.addSubview(scrollView)
+        scrollView.addSubview(topLabel)
+        scrollView.addSubview(firstnameLabel)
         
         var constraints = [NSLayoutConstraint]()
         // Scroll View Constraints
@@ -48,16 +59,20 @@ class PrimaryCaregiverViewController: UIViewController {
         constraints.append(NSLayoutConstraint(item: scrollView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .topMargin, multiplier: 1.0, constant: 0))
         constraints.append(NSLayoutConstraint(item: scrollView, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailingMargin, multiplier: 1.0, constant: 0))
         constraints.append(NSLayoutConstraint(item: scrollView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottomMargin, multiplier: 1.0, constant: -20))
-        scrollView.addSubview(topLabel)
+        
+        // Testing making label locations relative to other labels
+        constraints.append(NSLayoutConstraint(item: firstnameLabel, attribute: .leading, relatedBy: .equal, toItem: self.scrollView, attribute: .leadingMargin, multiplier: 1.0, constant: 0))
+        constraints.append(NSLayoutConstraint(item: firstnameLabel, attribute: .topMargin, relatedBy: .equal, toItem: self.topLabel, attribute: .topMarginœœœ, multiplier: 1.0, constant: 0))
+        
+        
+        
         // Top Label Constraints
-        topLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16.0).isActive = true
+        topLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor, constant: 0).isActive = true
         topLabel.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 16.0).isActive = true
-        /*
-        constraints.append(NSLayoutConstraint(item: topLabel, attribute: .leading, relatedBy: .equal, toItem: scrollView, attribute: .leadingMargin, multiplier: 1.0, constant: 8))
-        constraints.append(NSLayoutConstraint(item: topLabel, attribute: .top, relatedBy: .equal, toItem: scrollView, attribute: .topMargin, multiplier: 1.0, constant: 8))
-        constraints.append(NSLayoutConstraint(item: topLabel, attribute: .trailing, relatedBy: .equal, toItem: scrollView, attribute: .trailingMargin, multiplier: 1.0, constant: -8))
-        constraints.append(NSLayoutConstraint(item: topLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 48))
-        */
+        
+        
+
+        
         NSLayoutConstraint.activate(constraints)
         
         // Do any additional setup after loading the view.

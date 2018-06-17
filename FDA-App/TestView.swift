@@ -15,7 +15,6 @@ class TestView {
     var viewc: UIViewController!
     var label: UILabel!
     
-    
     init(useDelegate: AppDelegate) {
         delegate = useDelegate;
         
